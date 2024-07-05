@@ -134,7 +134,7 @@ const Sidebar = () => {
                 Settings
               </a>
               <a
-                href="#"
+                href="/"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 role="menuitem"
               >
@@ -223,17 +223,17 @@ const Sidebar = () => {
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 role="menuitem"
               >
-                Your Profile
+                My Profile
               </a>
               <a
-                href="#"
+                href="/profile"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 role="menuitem"
               >
-                Settings
+                My card
               </a>
               <a
-                href="#"
+                href="/"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 role="menuitem"
               >
@@ -268,30 +268,44 @@ const Sidebar = () => {
               <p className="text-white text-[30px]">UpSwap</p>
             </div>
 
-            <div className="flex-1 px-4 space-y-2 overflow-hidden hover:overflow-auto">
-              <a
-                href="#"
-                className="flex items-center w-full space-x-2 text-white bg-blue rounded-lg"
-              >
-                <span aria-hidden="true" className="p-2 bg-blue rounded-lg">
-                  <FontAwesomeIcon icon={faHome} />
-                </span>
-                <span>Home</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center space-x-2 text-blue transition-colors rounded-lg group hover:bg-blue hover:text-white"
-              >
-                <span
-                  aria-hidden="true"
-                  className="p-2 transition-colors rounded-lg group-hover:bg-blue group-hover:text-white"
+            <div className="flex-1 flex flex-col justify-between px-4 space-y-2 gap-7 overflow-hidden hover:overflow-auto">
+              <div>
+                <a
+                  href="/discover"
+                  className="flex items-center w-full space-x-2 text-white bg-blue rounded-lg"
                 >
-                  <FontAwesomeIcon icon={faFile} />
-                </span>
-                <span>Pages</span>
+                  <span aria-hidden="true" className="p-2 bg-blue rounded-lg">
+                    <FontAwesomeIcon icon={faHome} />
+                  </span>
+                  <span>Discover</span>
+                </a>
+                <a
+                  href="/courses"
+                  className="flex items-center space-x-2 text-blue transition-colors rounded-lg group hover:bg-blue hover:text-white"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="p-2 transition-colors rounded-lg group-hover:bg-blue group-hover:text-white"
+                  >
+                    <FontAwesomeIcon icon={faFile} />
+                  </span>
+                  <span>Courses</span>
+                </a>
+              </div>
+              <a
+                href="https://www.apple.com/app-store/"
+                className="flex justify-center"
+              >
+                <Image
+                  className="w-[130px] h-auto"
+                  src="/assets/ios.webp"
+                  width={150}
+                  height={150}
+                  alt="IOS"
+                />
               </a>
             </div>
-            <div className="flex-shrink-0 p-4 mt-10">
+            <div className="flex-shrink-0 p-4 mt-5">
               <div className="hidden p-2 space-y-6 bg-gray-100 rounded-lg md:block">
                 {/* <Image
                   aria-hidden="true"

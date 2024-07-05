@@ -2,7 +2,7 @@ import Image from "next/image";
 import Sidebar from "../../components/Sidebar";
 
 export const metadata = {
-  title: "Your Profile - Manage Your Account",
+  title: "My Profile - Manage Your Account",
   description:
     "View and update your personal information, manage your account settings, and customize your profile. Keep your details up to date and secure.",
 };
@@ -120,6 +120,30 @@ export default function Profile() {
                       </span>{" "}
                       Tbilisi, Georgia{" "}
                     </a>
+                    <a
+                      className="flex items-center mb-2 mr-5 text-secondary-dark hover:text-primary"
+                      href="javascript:void(0)"
+                    >
+                      <span className="mr-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="black"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="size-5"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                          />
+                        </svg>
+                      </span>{" "}
+                      +995 (598) 434473{" "}
+                    </a>
+                  </div>
+                  <div className="flex flex-wrap pr-2 mb-4 font-medium">
                     <a
                       className="flex items-center mb-2 mr-5 text-secondary-dark hover:text-primary"
                       href="javascript:void(0)"

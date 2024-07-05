@@ -145,7 +145,7 @@ export default function SkillShare() {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="px-6 py-2 bg-purple text-white font-semibold rounded-lg hover:bg-blue transition-all"
+              className="px-6 py-2 bg-blue text-white font-semibold rounded-lg hover:bg-purple transition-all"
             >
               Create
             </button>

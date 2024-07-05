@@ -1,11 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./Navigation";
 import BurgerMenu from "./BurgerMenu";
+import Login from "./Login";
 
-export default function Header({ setOpen }) {
+export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="w-full h-[70px] lg:h-[85px] bg-gradient-to-r from-black to-black/10 sticky top-0 z-10">
       <div className="w-full h-full flex mx-auto justify-between items-center px-10 lg:px-0 lg:pr-10 max-w-[1600px]">
@@ -17,6 +21,7 @@ export default function Header({ setOpen }) {
         </div>
         <BurgerMenu />
       </div>
+      <Login open={open} setOpen={setOpen} />
     </header>
   );
 }

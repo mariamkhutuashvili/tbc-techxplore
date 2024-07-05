@@ -1,13 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Header from "../../components/Header";
-
-export const metadata = {
-  title: "About Us - Learn More About Our Company",
-  description:
-    "Discover the story behind our company, our mission and values. Get to know us better and learn why we are passionate about what we do.",
-};
+import Login from "../../components/Login";
 
 export default function AboutUs() {
+  const [open, setOpen] = useState(false);
+
+  const handleBecomeMemberClick = () => {
+    setOpen(true);
+  };
+
   return (
     <>
       <Header />
@@ -82,12 +86,16 @@ export default function AboutUs() {
           </p>
 
           <div className="text-center">
-            <button className="bg-blue-600 mt-4 text-white py-3 px-8 bg-black rounded-full hover:bg-blue-700 transition duration-300">
+            <button
+              className="bg-blue-600 mt-4 text-white bg-black py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300"
+              onClick={handleBecomeMemberClick}
+            >
               Become a Member
             </button>
           </div>
         </div>
       </div>
+      <Login open={open} setOpen={setOpen} />
     </>
   );
 }

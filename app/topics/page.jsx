@@ -13,7 +13,7 @@ const topics = [
   "Math",
   "DTC",
   "Space",
-  "Venture Capital",
+  "Finance",
 ];
 
 export default function Topics() {
@@ -53,10 +53,10 @@ export default function Topics() {
           {topics.map((topic) => (
             <div
               key={topic}
-              className={`flex items-center justify-center p-4 rounded-full cursor-pointer transition-all 
+              className={`flex items-center justify-center text-center p-4 rounded-full cursor-pointer transition-all 
                           ${
                             isSelected(topic)
-                              ? "bg-purple-700"
+                              ? "bg-blue"
                               : "bg-white text-black"
                           }`}
               onClick={() => handleTopicClick(topic)}
@@ -67,7 +67,7 @@ export default function Topics() {
         </div>
         <div className="flex justify-between items-center mt-8">
           <button
-            className={`px-6 py-3 bg-purple-700 text-white font-semibold rounded-full 
+            className={`px-6 py-3 underline text-white font-semibold rounded-full 
                         ${
                           selectedTopics.length !== 2
                             ? "opacity-50 cursor-not-allowed"

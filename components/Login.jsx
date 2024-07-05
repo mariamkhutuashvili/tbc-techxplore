@@ -31,6 +31,7 @@ export default function Login({ open, setOpen }) {
     event.preventDefault();
     console.log("Register submitted");
     handleClose();
+    router.push("/topics");
   };
 
   const days = Array.from({ length: 31 }, (_, i) => i + 1);
