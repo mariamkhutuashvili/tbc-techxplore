@@ -38,6 +38,10 @@ export default function Topics() {
     }
   }
 
+  function handleSkipClick() {
+    router.push("/");
+  }
+
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-purple-600 to-blue-500 text-white">
       <div className="w-1/2">
@@ -74,7 +78,9 @@ export default function Topics() {
           >
             Next
           </button>
-          <button className="text-white underline">Skip for now</button>
+          <button className="text-white underline" onClick={handleSkipClick}>
+            Skip for now
+          </button>
         </div>
       </div>
     </div>

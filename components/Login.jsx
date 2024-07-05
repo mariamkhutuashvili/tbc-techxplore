@@ -2,6 +2,7 @@
 
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -12,6 +13,7 @@ import {
 
 export default function Login({ open, setOpen }) {
   const [activeTab, setActiveTab] = useState("login");
+  const router = useRouter();
 
   const handleClose = () => {
     setOpen(false);
@@ -22,6 +24,7 @@ export default function Login({ open, setOpen }) {
     event.preventDefault();
     console.log("Login submitted");
     handleClose();
+    router.push("/topics");
   };
 
   const handleRegisterSubmit = (event) => {
