@@ -269,7 +269,7 @@ const Sidebar = () => {
             </div>
 
             <div className="flex-1 flex flex-col justify-between px-4 space-y-2 gap-7 overflow-hidden hover:overflow-auto">
-              <div>
+              <div className="flex flex-col gap-2">
                 <a
                   href="/discover"
                   className="flex items-center w-full space-x-2 text-white bg-blue rounded-lg"

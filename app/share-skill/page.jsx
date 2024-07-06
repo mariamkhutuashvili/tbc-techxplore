@@ -61,7 +61,7 @@ export default function SkillShare() {
               value={projectName}
               onChange={(e) => setProjectName(e.target.value)}
               className="mt-1 block w-full p-2.5 bg-gray-200 text-black border border-gray-300 rounded-lg focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
-              placeholder="Enter your project name"
+              placeholder="Enter your skill name"
             />
           </div>
           <div>
@@ -78,7 +78,7 @@ export default function SkillShare() {
               value={projectDescription}
               onChange={(e) => setProjectDescription(e.target.value)}
               className="mt-1 block w-full p-2.5 bg-gray-200 text-black border border-gray-300 rounded-lg focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
-              placeholder="Describe your project..."
+              placeholder="Describe your skill..."
             ></textarea>
             <p className="text-right text-gray-500">500 words</p>
           </div>

@@ -91,6 +91,7 @@ export default function Login({ open, setOpen }) {
                   name="email"
                   placeholder="name@company.com"
                   className="w-full bg-transparent border-none outline-none text-black placeholder-gray-500"
+                  required
                 />
               </div>
             </div>
@@ -103,6 +104,7 @@ export default function Login({ open, setOpen }) {
                   name="password"
                   placeholder="Password"
                   className="w-full bg-transparent border-none outline-none text-black placeholder-gray-500"
+                  required
                 />
               </div>
             </div>
@@ -126,6 +128,7 @@ export default function Login({ open, setOpen }) {
                   name="email"
                   placeholder="name@company.com"
                   className="w-full bg-transparent border-none outline-none text-black placeholder-gray-500"
+                  required
                 />
               </div>
             </div>
@@ -138,6 +141,7 @@ export default function Login({ open, setOpen }) {
                   name="name"
                   placeholder="Your name"
                   className="w-full bg-transparent border-none outline-none text-black placeholder-gray-500"
+                  required
                 />
               </div>
             </div>
@@ -150,6 +154,7 @@ export default function Login({ open, setOpen }) {
                   name="phone"
                   placeholder="Phone number"
                   className="w-full bg-transparent border-none outline-none text-black placeholder-gray-500"
+                  required
                 />
               </div>
             </div>
@@ -162,6 +167,7 @@ export default function Login({ open, setOpen }) {
                   name="password"
                   placeholder="Password"
                   className="w-full bg-transparent border-none outline-none text-black placeholder-gray-500"
+                  required
                 />
               </div>
             </div>
@@ -174,6 +180,7 @@ export default function Login({ open, setOpen }) {
                   name="confirmPassword"
                   placeholder="Confirm password"
                   className="w-full bg-transparent border-none outline-none text-black placeholder-gray-500"
+                  required
                 />
               </div>
             </div>

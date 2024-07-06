@@ -23,7 +23,7 @@ export default function Topics() {
   function handleTopicClick(topic) {
     if (selectedTopics.includes(topic)) {
       setSelectedTopics(selectedTopics.filter((t) => t !== topic));
-    } else if (selectedTopics.length < 2) {
+    } else if (selectedTopics.length < 3) {
       setSelectedTopics([...selectedTopics, topic]);
     }
   }
@@ -33,7 +33,7 @@ export default function Topics() {
   }
 
   function handleNextClick() {
-    if (selectedTopics.length === 2) {
+    if (selectedTopics.length >= 2) {
       router.push("/share-skill");
     }
   }
@@ -48,7 +48,7 @@ export default function Topics() {
         <h1 className="text-3xl font-bold text-center mb-2">
           Choose your topics of interest
         </h1>
-        <p className="text-center mb-8">Choose exactly 2 options</p>
+        <p className="text-center mb-8">Choose maximum 3 options</p>
         <div className="grid grid-cols-4 gap-4">
           {topics.map((topic) => (
             <div
@@ -69,11 +69,11 @@ export default function Topics() {
           <button
             className={`px-6 py-3 underline text-white font-semibold rounded-full 
                         ${
-                          selectedTopics.length !== 2
+                          selectedTopics.length <= 1
                             ? "opacity-50 cursor-not-allowed"
                             : ""
                         }`}
-            disabled={selectedTopics.length !== 2}
+            disabled={selectedTopics.length <= 1}
             onClick={handleNextClick}
           >
             Next
