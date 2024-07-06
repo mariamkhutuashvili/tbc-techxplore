@@ -226,11 +226,11 @@ const Sidebar = () => {
                 My Profile
               </a>
               <a
-                href="/profile"
+                href="/my-card"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 role="menuitem"
               >
-                My card
+                My Card
               </a>
               <a
                 href="/"
@@ -272,24 +272,31 @@ const Sidebar = () => {
               <div className="flex flex-col gap-2">
                 <a
                   href="/discover"
-                  className="flex items-center w-full space-x-2 text-white bg-blue rounded-lg"
-                >
-                  <span aria-hidden="true" className="p-2 bg-blue rounded-lg">
-                    <FontAwesomeIcon icon={faHome} />
-                  </span>
-                  <span>Discover</span>
-                </a>
-                <a
-                  href="/courses"
-                  className="flex items-center space-x-2 text-blue transition-colors rounded-lg group hover:bg-blue hover:text-white"
+                  className="flex items-center space-x-2 text-white bg-blue rounded-lg group"
                 >
                   <span
                     aria-hidden="true"
-                    className="p-2 transition-colors rounded-lg group-hover:bg-blue group-hover:text-white"
+                    className="p-2 text-white bg-blue rounded-lg group-hover:opacity-80 transition-opacity"
+                  >
+                    <FontAwesomeIcon icon={faHome} />
+                  </span>
+                  <span className="group-hover:opacity-80 transition-opacity">
+                    Discover
+                  </span>
+                </a>
+                <a
+                  href="/courses"
+                  className="flex items-center space-x-2 text-white bg-blue rounded-lg group"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="p-2 text-white bg-blue rounded-lg group-hover:opacity-80 transition-opacity "
                   >
                     <FontAwesomeIcon icon={faFile} />
                   </span>
-                  <span>Courses</span>
+                  <span className="group-hover:opacity-80 transition-opacity">
+                    Courses
+                  </span>
                 </a>
               </div>
               <a
@@ -319,14 +326,10 @@ const Sidebar = () => {
                   Use our <span className="text-base text-purple">Premium</span>{" "}
                   features now! <br />
                 </p>
-                <button className="w-full px-4 py-2 text-center text-white transition-colors bg-blue rounded-lg hover:bg-blue focus:outline-none focus:ring focus:ring-indigo-600 focus:ring-offset-2 focus:ring-offset-gray-100">
-                  Upgrade to pro
+                <button className="w-full px-4 py-2 text-center text-white transition-opacity bg-blue rounded-lg hover:opacity-80 focus:outline-none focus:ring focus:ring-blue focus:ring-offset-2 focus:ring-offset-gray-100">
+                  Upgrade to Pro
                 </button>
               </div>
-
-              <button className="w-full px-4 py-2 text-center text-white transition-colors bg-blue rounded-lg md:hidden hover:bg-blue focus:outline-none focus:ring focus:ring-indigo-600 focus:ring-offset-2 focus:ring-offset-gray-100">
-                Upgrade to pro
-              </button>
             </div>
           </nav>
 

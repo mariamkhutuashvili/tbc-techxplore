@@ -37,7 +37,7 @@ export default function SkillShare() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // form submission logic
-    router.push("/profile");
+    router.push("/my-card");
   };
 
   return (

@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Navigation from "./Navigation";
+import Login from "./Login";
 
 export default function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -12,6 +14,11 @@ export default function BurgerMenu() {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const openLogin = () => {
+    setLoginOpen(true);
+    closeMenu();
   };
 
   return (
@@ -56,10 +63,14 @@ export default function BurgerMenu() {
         </button>
         <div className="pb-10 h-screen flex flex-col justify-between mt-10">
           <div className="flex flex-col gap-10">
-            <Navigation layout="flex-col text-[20px]" setIsOpen={setIsOpen} />
+            <Navigation
+              layout="flex-col text-[20px]"
+              setIsOpen={setLoginOpen}
+            />
           </div>
         </div>
       </div>
+      <Login open={loginOpen} setOpen={setLoginOpen} />
     </div>
   );
 }

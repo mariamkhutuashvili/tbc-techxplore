@@ -56,7 +56,7 @@ export default function Topics() {
               className={`flex items-center justify-center text-center p-4 rounded-full cursor-pointer transition-all 
                           ${
                             isSelected(topic)
-                              ? "bg-blue"
+                              ? "bg-gradient-to-r from-purple to-blue text-white"
                               : "bg-white text-black"
                           }`}
               onClick={() => handleTopicClick(topic)}
